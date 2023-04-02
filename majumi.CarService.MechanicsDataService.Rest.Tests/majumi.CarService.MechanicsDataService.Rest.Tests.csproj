@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\majumi.CarSerbice.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj" />
+    <ProjectReference Include="..\majumi.CarService.MechanicsDataService.Logic\majumi.CarService.MechanicsDataService.Logic.csproj" />
+  </ItemGroup>
+
+</Project>
