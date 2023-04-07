@@ -11,10 +11,7 @@
 //
 //===============================================================================
 
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-
-namespace ZsutPw.Patterns.WebService.Rest;
+namespace majumi.CarService.MechanicsDataService.Rest;
 public class Program
 {
     public static void Main(string[] args)

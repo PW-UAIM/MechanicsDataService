@@ -1,4 +1,4 @@
-﻿namespace majumi.CarService.MechanicsDataService.Rest.Model;
+﻿namespace majumi.CarService.MechanicsDataService.Rest.Model.Model;
 
 public class MechanicData
 {

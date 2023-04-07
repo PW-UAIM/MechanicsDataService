@@ -1,7 +1,5 @@
 ﻿using majumi.CarService.MechanicsDataService.Model;
-using System.Net;
-using System.Numerics;
-using System.Xml.Linq;
+using majumi.CarService.MechanicsDataService.Rest.Model.Model;
 
 namespace majumi.CarService.MechanicsDataService.Rest.Model.Converters;
 

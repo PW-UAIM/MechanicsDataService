@@ -7,13 +7,12 @@ public class MechanicCollection : IMechanicCollection
 {
     private static readonly List<Mechanic> Mechanics;
 
-    private static readonly object MechanicLock = new object();
+    private static readonly object MechanicLock = new();
     static MechanicCollection() {
-        MechanicCollectionReader mechanicCollectionReader = new MechanicCollectionReader();
         Mechanics = new List<Mechanic> (MechanicCollectionReader.ReadFromJSON("Mechanics.json"));
     }
 
-    public Mechanic GetById(int searchedId)
+    public Mechanic? GetById(int searchedId)
     {
         lock (MechanicLock)
         {

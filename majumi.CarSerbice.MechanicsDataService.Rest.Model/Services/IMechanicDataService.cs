@@ -1,6 +1,6 @@
 ﻿using majumi.CarService.MechanicsDataService.Model;
 
-namespace majumi.CarService.MechanicsDataService.Rest.Services;
+namespace majumi.CarService.MechanicsDataService.Rest.Model.Services;
 
 public interface IMechanicDataService
 {
