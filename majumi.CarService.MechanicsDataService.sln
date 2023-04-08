@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.Mechanics
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Model", "majumi.CarService.MechanicsDataService.Model\majumi.CarService.MechanicsDataService.Model.csproj", "{787DDDE9-7757-4696-A328-42BE1FD3D2E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest.Model", "majumi.CarSerbice.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj", "{03517070-2593-4D82-8178-72754533219E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest.Model", "majumi.CarService.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj", "{03517070-2593-4D82-8178-72754533219E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest.Tests", "majumi.CarService.MechanicsDataService.Rest.Tests\majumi.CarService.MechanicsDataService.Rest.Tests.csproj", "{8397A369-0E82-4B23-9C17-C9607C856FA9}"
 EndProject

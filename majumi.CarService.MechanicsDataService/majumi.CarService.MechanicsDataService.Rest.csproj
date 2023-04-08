@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\majumi.CarSerbice.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj" />
+    <ProjectReference Include="..\majumi.CarService.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj" />
     <ProjectReference Include="..\majumi.CarService.MechanicsDataService.Logic\majumi.CarService.MechanicsDataService.Logic.csproj" />
     <ProjectReference Include="..\majumi.CarService.MechanicsDataService.Model\majumi.CarService.MechanicsDataService.Model.csproj" />
     <ProjectReference Include="..\majumi.CarService.MechanicsDataService.Rest.Tests\majumi.CarService.MechanicsDataService.Rest.Tests.csproj" />
