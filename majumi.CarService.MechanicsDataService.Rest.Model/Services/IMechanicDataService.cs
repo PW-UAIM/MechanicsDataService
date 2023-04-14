@@ -7,4 +7,6 @@ public interface IMechanicDataService
     public Mechanic GetMechanic(int mechanicID);
 
     public Mechanic[] GetAllMechanics();
+
+    public string RunTests(string host, int port);
 }
