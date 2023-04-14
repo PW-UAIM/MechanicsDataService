@@ -29,7 +29,7 @@ public class MechanicDataController : ControllerBase, IMechanicDataService, ITes
     }
 
     [HttpGet]
-    [Route("/allMechanics")]
+    [Route("/mechanic/all")]
     public Mechanic[] GetAllMechanics()
     {
         return mechanicCollection.GetAllMechanics();
