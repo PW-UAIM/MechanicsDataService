@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest", "majumi.CarService.MechanicsDataService.Rest\majumi.CarService.MechanicsDataService.Rest.csproj", "{859D57D4-F4A6-4597-A25B-99CCD20D4930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "majumi.CarService.MechanicsDataService.Rest", "majumi.CarService.MechanicsDataService.Rest\majumi.CarService.MechanicsDataService.Rest.csproj", "{859D57D4-F4A6-4597-A25B-99CCD20D4930}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Logic", "majumi.CarService.MechanicsDataService.Logic\majumi.CarService.MechanicsDataService.Logic.csproj", "{6B5AAE8C-B375-4FBC-B036-7B913FA4399A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "majumi.CarService.MechanicsDataService.Logic", "majumi.CarService.MechanicsDataService.Logic\majumi.CarService.MechanicsDataService.Logic.csproj", "{6B5AAE8C-B375-4FBC-B036-7B913FA4399A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Model", "majumi.CarService.MechanicsDataService.Model\majumi.CarService.MechanicsDataService.Model.csproj", "{787DDDE9-7757-4696-A328-42BE1FD3D2E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "majumi.CarService.MechanicsDataService.Model", "majumi.CarService.MechanicsDataService.Model\majumi.CarService.MechanicsDataService.Model.csproj", "{787DDDE9-7757-4696-A328-42BE1FD3D2E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest.Model", "majumi.CarService.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj", "{03517070-2593-4D82-8178-72754533219E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "majumi.CarService.MechanicsDataService.Rest.Model", "majumi.CarService.MechanicsDataService.Rest.Model\majumi.CarService.MechanicsDataService.Rest.Model.csproj", "{03517070-2593-4D82-8178-72754533219E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "majumi.CarService.MechanicsDataService.Rest.Tests", "majumi.CarService.MechanicsDataService.Rest.Tests\majumi.CarService.MechanicsDataService.Rest.Tests.csproj", "{8397A369-0E82-4B23-9C17-C9607C856FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "majumi.CarService.MechanicsDataService.Rest.Tests", "majumi.CarService.MechanicsDataService.Rest.Tests\majumi.CarService.MechanicsDataService.Rest.Tests.csproj", "{8397A369-0E82-4B23-9C17-C9607C856FA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{A4BA4C76-BE75-41CA-A033-F852C3C355FF}"
+	ProjectSection(SolutionItems) = preProject
+		run.bat = run.bat
+		test.bat = test.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
