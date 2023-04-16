@@ -21,4 +21,16 @@ public static class DataConverter
             Email = mechanic.Email
         };
     }
+
+    public static List<MechanicData> ConvertToMechanicDataList(List<Mechanic> mechanics)
+    {
+        List<MechanicData> mechanicData = new();
+
+        foreach (Mechanic m in mechanics)
+        {
+            mechanicData.Add(ConvertToMechanicData(m));
+        }
+
+        return mechanicData;
+    }
 }

@@ -1,12 +1,11 @@
 ﻿using majumi.CarService.MechanicsDataService.Model;
+using majumi.CarService.MechanicsDataService.Rest.Model.Model;
+using Microsoft.AspNetCore.Mvc;
 
 namespace majumi.CarService.MechanicsDataService.Rest.Model.Services;
 
 public interface IMechanicDataService
 {
-    public Mechanic GetMechanic(int mechanicID);
-
-    public Mechanic[] GetAllMechanics();
-
-    public string RunTests(string host, int port);
+    public ActionResult<MechanicData> GetMechanic(int id);
+    public ActionResult<List<MechanicData>> GetAllMechanics();
 }

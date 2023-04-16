@@ -4,6 +4,8 @@ using majumi.CarService.MechanicsDataService.Logic;
 using majumi.CarService.MechanicsDataService.Model;
 using majumi.CarService.MechanicsDataService.Model.Services;
 using majumi.CarService.MechanicsDataService.Rest.Model.Services;
+using majumi.CarService.MechanicsDataService.Rest.Model.Converters;
+using majumi.CarService.MechanicsDataService.Rest.Model.Model;
 
 namespace majumi.CarService.MechanicsDataService.Rest.Controllers;
 
@@ -23,16 +25,25 @@ public class MechanicDataController : ControllerBase, IMechanicDataService, ITes
 
     [HttpGet]
     [Route("/mechanic/{id:int}")]
-    public Mechanic GetMechanic(int id)
+    public ActionResult<MechanicData> GetMechanic(int id)
     {
-        return mechanicCollection.GetById(id);
+        Mechanic? mechanic = mechanicCollection.GetMechanicById(id);
+        if (mechanic == null)
+            return NotFound();
+
+        MechanicData mechanicData = DataConverter.ConvertToMechanicData(mechanic);
+
+        return Ok(mechanicData);
     }
 
     [HttpGet]
     [Route("/mechanic/all")]
-    public Mechanic[] GetAllMechanics()
+    public ActionResult<List<MechanicData>> GetAllMechanics()
     {
-        return mechanicCollection.GetAllMechanics();
+        List<Mechanic> mechanic = mechanicCollection.GetAllMechanics();
+        List<MechanicData> mechanicData = DataConverter.ConvertToMechanicDataList(mechanic);
+
+        return Ok(mechanicData);
     }
 
     [HttpGet]

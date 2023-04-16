@@ -2,7 +2,7 @@
 
 public interface IMechanicCollection
 {
-    public Mechanic? GetById(int searchedID);
-    public Mechanic[] GetAllMechanics();
+    public Mechanic? GetMechanicById(int mechanicID);
+    public List<Mechanic> GetAllMechanics();
 }
 

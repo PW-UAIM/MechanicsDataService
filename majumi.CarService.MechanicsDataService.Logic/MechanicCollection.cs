@@ -1,5 +1,6 @@
 ﻿using majumi.CarService.MechanicsDataService.Model;
 using majumi.CarService.MechanicsDataService.Model.Services;
+using System.ComponentModel;
 
 namespace majumi.CarService.MechanicsDataService.Logic;
 
@@ -11,20 +12,32 @@ public class MechanicCollection : IMechanicCollection
     static MechanicCollection() {
         Mechanics = new List<Mechanic> (MechanicCollectionReader.ReadFromJSON("Mechanics.json"));
     }
+    private Mechanic? FindByID(int mechanicID)
+    {
+        foreach (Mechanic visit in Mechanics)
+        {
+            if (visit.MechanicID == mechanicID)
+            {
+                return visit;
+            }
+        }
 
-    public Mechanic? GetById(int searchedId)
+        return null;
+    }
+
+    public Mechanic? GetMechanicById(int mechanicID)
     {
         lock (MechanicLock)
         {
-            return Mechanics.Find(mechanic => mechanic.MechanicID == searchedId);
+            return this.FindByID(mechanicID);
         }
     }
 
-    public Mechanic[] GetAllMechanics()
+    public List<Mechanic> GetAllMechanics()
     {
         lock(MechanicLock)
         {
-            return Mechanics.ToArray();
+            return Mechanics;
         }
     }
 }
