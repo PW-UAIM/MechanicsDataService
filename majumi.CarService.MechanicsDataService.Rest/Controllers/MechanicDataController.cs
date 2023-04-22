@@ -24,7 +24,7 @@ public class MechanicDataController : ControllerBase, IMechanicDataService, ITes
     }
 
     [HttpGet]
-    [Route("/mechanic/{id:int}")]
+    [Route("/getMechanic/{id:int}")]
     public ActionResult<MechanicData> GetMechanic(int id)
     {
         Mechanic? mechanic = mechanicCollection.GetMechanicById(id);
@@ -37,7 +37,7 @@ public class MechanicDataController : ControllerBase, IMechanicDataService, ITes
     }
 
     [HttpGet]
-    [Route("/mechanic/all")]
+    [Route("/getAllMechanics")]
     public ActionResult<List<MechanicData>> GetAllMechanics()
     {
         List<Mechanic> mechanic = mechanicCollection.GetAllMechanics();

@@ -26,9 +26,9 @@ public static class DataConverter
     {
         List<MechanicData> mechanicData = new();
 
-        foreach (Mechanic m in mechanics)
+        foreach (Mechanic mechanic in mechanics)
         {
-            mechanicData.Add(ConvertToMechanicData(m));
+            mechanicData.Add(ConvertToMechanicData(mechanic));
         }
 
         return mechanicData;
