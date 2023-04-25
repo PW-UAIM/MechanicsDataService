@@ -1,9 +1,9 @@
 echo off
 set url=https://localhost:5002
 
-CALL:curl_test "Dane mechanika o ID 1" GET /mechanic/1
+CALL:curl_test "Dane mechanika o ID 1" GET /getMechanic/1
 
-CALL:curl_test "Dane wszystkich mechanikow" GET /mechanic/all
+CALL:curl_test "Dane wszystkich mechanikow" GET /getAllMechanics
 
 EXIT /B 0
 
